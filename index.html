@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="D:\PROJECTS\focus timer\timer.png" alt="Logo" class="logo">
+      <a href="#" class="website-name">FOCUS TIMER</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/SONUVERMA11" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sonu-verma-16247a276/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:snverma1020@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Focus Timer</h1>
+    <div class="progress-ring">
+      <svg width="220" height="220">
+        <circle class="ring-bg" cx="110" cy="110" r="100"></circle>
+        <circle class="ring-progress" cx="110" cy="110" r="100"></circle>
+      </svg>
+      <div class="time-display">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+    </div>
+    <div class="cycle">Cycle: <span id="cycle">1</span></div>
+    <div class="controls">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+    <div class="settings">
+      <label for="focus-time">Focus Time (min):</label>
+      <input type="number" id="focus-time" value="25" min="1" max="60">
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-text">
+        Developed with <span style="color: #ff0000;">❤</span> by 
+        <a href="https://github.com/SONUVERMA11" class="developer-name" target="_blank">SONU VERMA</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
